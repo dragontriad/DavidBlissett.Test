@@ -1,2 +1,2 @@
-# DavidBlissett.Test.Host
-DavidBlissett.Test.Host
+# DavidBlissett.Test
+DavidBlissett.Test
