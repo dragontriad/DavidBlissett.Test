@@ -1,4 +1,4 @@
-Technical Overview of Customer Management Solution
+Technical Overview of Customer Management Solution (See https://youtu.be/hSKRs-CymCY)
 This repository is a technical test submitted by David Blissett, showcasing a CRUD-based application built with ASP.NET Core. The solution is designed to manage customer records through a structured Web API backend and a Razor Pages frontend, demonstrating a clean separation of concerns and modularity in design.
 
 Project Structure
