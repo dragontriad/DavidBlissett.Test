@@ -1,0 +1,6 @@
+@DavidBlissett.Test.WebAPI_HostAddress = http://localhost:5137
+
+GET {{DavidBlissett.Test.WebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,81 @@
+# Ignore Visual Studio specific files
+.vscode/
+.vs/
+.idea/
+
+# Ignore build output directories
+bin/
+obj/
+
+# Ignore user-specific files
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Ignore MacOS specific files
+.DS_Store
+
+# Ignore Windows specific files
+Thumbs.db
+ehthumbs.db
+
+# Ignore Rider specific files
+.idea/
+*.sln.iml
+
+# Ignore build directories in root and subdirectories
+**/[Bb]in/
+**/[Oo]bj/
+**/[Ll]og/
+
+# Ignore test result and coverage directories
+TestResults/
+Coverage/
+
+# Ignore logs and other output
+*.log
+
+# Ignore NuGet packages and config
+*.nupkg
+*.snupkg
+.nuget/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Ignore npm package directories and lockfiles if using JavaScript libraries
+node_modules/
+npm-debug.log
+yarn.lock
+
+# Ignore configuration files containing sensitive information
+appsettings.*.json
+secrets.json
+
+# Include essential ASP.NET Core project files
+!.gitignore
+!*.csproj
+!*.sln
+!*.config
+!*.cs
+!*.razor
+!*.json
+!*.html
+!*.css
+!*.js
+
+# Include WebAPI and other project-specific folders and files
+!DavidBlissett.Test.App/
+!DavidBlissett.Test.WebAPI/
+!DavidBlissett.Test.Shared/
+
+# Ignore publish output and generated files
+.publish/
+Properties/PublishProfiles/
+
+# Optional: Include README, LICENSE, and markdown documentation
+!README.md
+!LICENSE
+*.md

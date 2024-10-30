@@ -1,0 +1,32 @@
+﻿@page
+@model DavidBlissett.Test.App.Pages.Customers.IndexModel
+
+<h2>Customers</h2>
+<p>
+    <a class="btn btn-primary" asp-page="Create">Add New Customer</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Post Code</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var customer in Model.Customers)
+        {
+            <tr>
+                <td>@customer.FirstName</td>
+                <td>@customer.LastName</td>
+                <td>@customer.PostCode</td>
+                <td>
+                    <a asp-page="Select" asp-route-id="@customer.CustomerID">Select</a> |
+                    <a asp-page="Edit" asp-route-id="@customer.CustomerID">Edit</a> |
+                    <a asp-page="Delete" asp-route-id="@customer.CustomerID">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

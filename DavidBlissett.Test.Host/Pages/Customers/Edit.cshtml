@@ -1,0 +1,42 @@
+﻿@page
+@model DavidBlissett.Test.App.Pages.Customers.EditModel
+
+<h2>Edit Customer</h2>
+
+<form method="post">
+    <input type="hidden" asp-for="Customer.CustomerID" />
+
+    <div class="form-group">
+        <label asp-for="Customer.FirstName"></label>
+        <input asp-for="Customer.FirstName" class="form-control" />
+        <span asp-validation-for="Customer.FirstName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Customer.LastName"></label>
+        <input asp-for="Customer.LastName" class="form-control" />
+        <span asp-validation-for="Customer.LastName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Customer.Address1"></label>
+        <input asp-for="Customer.Address1" class="form-control" />
+        <span asp-validation-for="Customer.Address1" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Customer.Address2"></label>
+        <input asp-for="Customer.Address2" class="form-control" />
+        <span asp-validation-for="Customer.Address2" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Customer.PostCode"></label>
+        <input asp-for="Customer.PostCode" class="form-control" />
+        <span asp-validation-for="Customer.PostCode" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Customer.TelephoneNumber"></label>
+        <input asp-for="Customer.TelephoneNumber" class="form-control" />
+        <span asp-validation-for="Customer.TelephoneNumber" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a asp-page="Index" class="btn btn-secondary">Cancel</a>
+</form>
