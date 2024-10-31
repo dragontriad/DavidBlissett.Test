@@ -9,6 +9,7 @@ builder.Services.AddDbContext<AppDBContext>(options =>
 
 // Register the CustomerRepository and ICustomerRepository in the DI container
 builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
+builder.Services.AddScoped<ICustomerSQLRepository, CustomerSQLRepository>();
 
 
 // Add services to the container.

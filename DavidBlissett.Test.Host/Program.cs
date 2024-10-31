@@ -15,6 +15,12 @@ builder.Services.AddHttpClient<ICustomerDataService, CustomerDataService>(client
 });
 
 
+
+builder.Services.AddHttpClient<ICustomerSQLDataService, CustomerSQLDataService>(client =>
+{
+    client.BaseAddress = new Uri(environment_url);
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
